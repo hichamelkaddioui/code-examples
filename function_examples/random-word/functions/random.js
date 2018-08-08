@@ -11,7 +11,7 @@ exports.handler = function(event, context, callback) {
     'week',
     'rejoice',
   ];
-  const randomNumber = Math.floor(Math.random() * 10);
+  const randomNumber = Math.floor(Math.random() * randomWords.length);
   callback(null, {
     statusCode: 200,
     headers: {
